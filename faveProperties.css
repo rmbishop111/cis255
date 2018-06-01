@@ -1,0 +1,110 @@
+.two-column{
+    padding: 10px;
+    column-count: 2;
+    column-width: 50%;
+    max-width: 100%;
+    column-rule: 1px solid lightblue;
+}
+
+header {
+    column-span: all;
+    background-color: rgb(181, 247, 219);
+    box-shadow: 5px 5px 10px  rgb(35, 36, 35);
+    margin: 10px 0px 0px 40px;
+    position: static;
+}
+
+body {
+    max-width: 80%;
+	margin: auto;
+    background: white;
+    column-span: 2;
+}
+
+div#left>p{
+    width: 200px;
+    height: 100%;
+    float: left;
+    margin-left: 10px;
+    padding: 3px;
+    border: 1px solid #d0d0d0;
+    box-shadow: 5px 5px 10px  rgb(35, 36, 35);
+
+}
+
+div#main{
+    margin-left: 10px;
+    max-width: 75%;
+    min-width: 500px;
+    margin-bottom: 10px;
+    border: 3px solid #d0d0d0;
+    transition-property: border;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+
+div#main:hover{
+    border: 4px solid #b83333;
+}
+
+div#main2{
+    margin-left: 10px;
+    max-width: 75%;
+    
+    margin-bottom: 10px;
+    border: 3px solid #d0d0d0;
+    box-shadow: 5px 5px 10px  rgb(35, 36, 35);
+    display: none;
+}
+
+div#right{
+    float: right;
+    width: 23%;
+    min-height: 1100px;
+    border: 1px solid #d0d0d0;
+    box-shadow: 5px 5px 10px  rgb(35, 36, 35);
+    
+}
+
+p {
+    padding: 3px
+}
+
+.twoColumnWidth-left{
+    float: left; 
+    width: 100%;
+    margin-right: 10px;
+    background-color: rgb(181, 247, 219);
+}
+
+.twoColumnWidth-right{
+    float: right; 
+    width: 60%;
+    margin-right: 10px;
+    background-color: rgb(181, 247, 219);
+}
+
+footer {
+    column-span: all;
+    background-color: black;
+    box-shadow: 5px 5px 10px  rgb(35, 36, 35);
+    margin: 10px 0px 0px 40px;
+}
+img {
+	border: 1px solid #d0d0d0; /* light gray */
+	border-radius: 5px;
+}
+#catFloat {
+	float: right;
+    margin: 0.5em;
+}
+
+@media only screen and (max-width: 1000px){
+    div#right{display: none}
+}
+
+@media only screen and (min-width: 800px)and (max-width: 1000px){
+    div#main2{display: block}
+}
+

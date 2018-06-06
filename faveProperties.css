@@ -95,10 +95,7 @@ img {
 	border: 1px solid #d0d0d0; /* light gray */
 	border-radius: 5px;
 }
-#catFloat {
-	float: right;
-    margin: 0.5em;
-}
+
 
 @media only screen and (max-width: 1000px){
     div#right{display: none}
